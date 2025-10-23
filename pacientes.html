@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yuna - Reabilitação e cuidados especializados para sua recuperação">
+    <title>Yuna - Para Pacientes e Familiares | Reabilitação com Cuidado</title>
+    <link rel="stylesheet" href="pacientes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://db.onlinewebfonts.com/c/38733215ec18d82fcec1ad1365f05cd4?family=FS+Siena+Regular" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navegação -->
+    <header class="header">
+        <nav class="container nav-container">
+            <div class="logo">
+                <a href="#" onclick="window.location.reload(); return false;">
+                    <img src="public/logo-yuna.svg" alt="Yuna" />
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="medicos.html" class="nav-cta">Para Médicos</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Banner de Abertura -->
+    <section class="hero-section hero-pacientes">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 class="hero-title fade-in">Transformamos momentos desafiadores em experiências encantadoras</h1>
+            <p class="hero-subtitle fade-in-delay">Na Yuna, oferecemos um cuidado que respeita sua individualidade e história, proporcionando um ambiente seguro, acolhedor e genuinamente humano para você e sua família.</p>
+            <div class="hero-cta fade-in-delay-2">
+                <a href="#contato" class="btn btn-primary">Fale Conosco</a>
+                <a href="#sobre" class="btn btn-secondary">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- O que é a Yuna -->
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Bem-vindo à Yuna</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="highlight">A Yuna é uma <strong>Unidade de Transição de Cuidados</strong> que promove um ambiente humano e acolhedor, focado em servir e cuidar de pessoas em momentos que precisam de atenção especial.</p>
+                    <p>Nossa <strong>equipe multidisciplinar e especializada</strong> trabalha em sintonia para oferecer um cuidado integral, garantindo que todas as suas necessidades médicas, físicas e emocionais sejam atendidas com excelência e humanidade.</p>
+                    
+                    <div class="team-composition">
+                        <h3>Nossa Equipe Especializada</h3>
+                        <div class="team-grid">
+                            <div class="team-category">
+                                <h4>Área Médica</h4>
+                                <ul>
+                                    <li>Médico Clínico Geral/Geriatra</li>
+                                    <li>Fisiatra</li>
+                                    <li>Infectologista</li>
+                                    <li>Paliativista</li>
+                                </ul>
+                            </div>
+                            <div class="team-category">
+                                <h4>Reabilitação</h4>
+                                <ul>
+                                    <li>Fisioterapia</li>
+                                    <li>Fonoaudiologia</li>
+                                    <li>Terapia Ocupacional</li>
+                                </ul>
+                            </div>
+                            <div class="team-category">
+                                <h4>Cuidado Integral</h4>
+                                <ul>
+                                    <li>Enfermagem</li>
+                                    <li>Nutrição</li>
+                                    <li>Farmácia</li>
+                                    <li>Psicologia</li>
+                                    <li>Serviço Social</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p>A <strong>transdisciplinaridade</strong> de nossa equipe assegura uma visão holística, onde cada profissional contribui para um plano de cuidados personalizado que respeita sua história de vida, crenças e vontades.</p>
+                </div>
+                <div class="about-image">
+                    <img src="public/foto02.png" alt="Estrutura da Yuna - Ambiente de reabilitação">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Linhas de Cuidado -->
+    <section class="diferenciais-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossas Linhas de Cuidado</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">Especializados em reabilitação, cuidados paliativos e cuidados continuados, oferecemos soluções personalizadas para cada necessidade</p>
+            </div>
+            
+            <!-- Linhas de Cuidado Principais -->
+            <div class="linhas-cuidado-grid">
+                <div class="linha-cuidado-card featured">
+                    <div class="linha-icon reabilitacao-icon"></div>
+                    <h3>Reabilitação e Readequação</h3>
+                    <p>Programas especializados para recuperação funcional e melhoria da qualidade de vida</p>
+                    <ul class="condicoes-list">
+                        <li>Pós-operatórios (ortopédicos, cardiológicos, neurológicos, oncológicos)</li>
+                        <li>Pós-AVC e pós-TCE</li>
+                        <li>Pós-internação prolongada (pós-COVID-19)</li>
+                        <li>Idosos frágeis</li>
+                    </ul>
+                </div>
+                
+                <div class="linha-cuidado-card featured">
+                    <div class="linha-icon paliativos-icon"></div>
+                    <h3>Cuidados Paliativos</h3>
+                    <p>Suporte integral focado na qualidade de vida e alívio do sofrimento</p>
+                    <ul class="condicoes-list">
+                        <li>Controle de sintomas e dor</li>
+                        <li>Suporte emocional para paciente e família</li>
+                        <li>Cuidados de conforto</li>
+                        <li>Acompanhamento multidisciplinar</li>
+                    </ul>
+                </div>
+                
+                <div class="linha-cuidado-card featured">
+                    <div class="linha-icon continuados-icon"></div>
+                    <h3>Cuidados Continuados</h3>
+                    <p>Acompanhamento prolongado para condições que requerem cuidados especializados</p>
+                    <ul class="condicoes-list">
+                        <li>Condições crônicas complexas</li>
+                        <li>Cuidados de longa permanência</li>
+                        <li>Transição hospitalar segura</li>
+                        <li>Manutenção da funcionalidade</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Estrutura Especializada -->
+            <div class="estrutura-especializada">
+                <h3>Nossa Estrutura Especializada</h3>
+                <div class="estrutura-grid">
+                    <div class="estrutura-item">
+                        <div class="estrutura-icon laboratorio-icon"></div>
+                        <span>Laboratório de Atividades da Vida Diária</span>
+                    </div>
+                    <div class="estrutura-item">
+                        <div class="estrutura-icon centro-reab-icon"></div>
+                        <span>Centro de Reabilitação</span>
+                    </div>
+                    <div class="estrutura-item">
+                        <div class="estrutura-icon jardim-icon"></div>
+                        <span>Jardim Sensorial</span>
+                    </div>
+                    <div class="estrutura-item">
+                        <div class="estrutura-icon ambiente-icon"></div>
+                        <span>Ambiente Hospitalar com Aconchego de Lar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vídeo Institucional -->
+    <section class="video-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Conheça Nossa Unidade</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <div class="play-button">▶</div>
+                    <p>Tour Virtual pela Yuna</p>
+                    <!-- Substitua com o embed do vídeo real -->
+                    <!-- <iframe src="URL_DO_VIDEO" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O Jeito Yuna de Cuidar -->
+    <section class="jeito-yuna-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>O Jeito Yuna de Cuidar</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">Um modelo de cuidado baseado em quatro pilares que garantem um atendimento personalizado, eficiente e genuinamente humano</p>
+            </div>
+            
+            <div class="premissa-box">
+                <h3>Nossa Premissa</h3>
+                <p>Oferecemos a <strong>segurança de um ambiente hospitalar com o aconchego de lar</strong>, proporcionando atendimento personalizado com profissionais qualificados e processos eficientes e transparentes.</p>
+            </div>
+            
+            <div class="pilares-grid">
+                <div class="pilar-card">
+                    <div class="pilar-number">1</div>
+                    <div class="pilar-content">
+                        <h3>Linhas de Cuidados</h3>
+                        <p>Classificamos cada paciente de acordo com suas necessidades específicas para direcionar o tratamento mais adequado:</p>
+                        <ul>
+                            <li><strong>Reabilitação:</strong> Recuperação funcional e melhoria da qualidade de vida</li>
+                            <li><strong>Cuidados Continuados:</strong> Acompanhamento prolongado para condições complexas</li>
+                            <li><strong>Cuidados Paliativos:</strong> Foco na qualidade de vida e alívio do sofrimento</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="pilar-card">
+                    <div class="pilar-number">2</div>
+                    <div class="pilar-content">
+                        <h3>Prática Transdisciplinar</h3>
+                        <p>Nossa equipe multiprofissional trabalha em perfeita sintonia, garantindo uma visão global e integrada de cada indivíduo.</p>
+                        <p>Cada especialista contribui com sua expertise para um cuidado completo que considera todos os aspectos da sua saúde e bem-estar.</p>
+                    </div>
+                </div>
+                
+                <div class="pilar-card">
+                    <div class="pilar-number">3</div>
+                    <div class="pilar-content">
+                        <h3>Plano Terapêutico</h3>
+                        <p>Estabelecemos metas e objetivos claros, traçados em conjunto com você e sua família, e revisados periodicamente.</p>
+                        <p>Seu progresso é acompanhado de perto, com ajustes constantes para garantir os melhores resultados possíveis.</p>
+                    </div>
+                </div>
+                
+                <div class="pilar-card">
+                    <div class="pilar-number">4</div>
+                    <div class="pilar-content">
+                        <h3>Respeito à Biografia</h3>
+                        <p>Desenvolvemos um plano de cuidados e atividades completamente personalizado, considerando sua história de vida, crenças e vontades.</p>
+                        <p>Acreditamos que cada pessoa é única, e seu tratamento deve refletir quem você é e o que é importante para você.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="beneficios-familia">
+                <h3>Benefícios para Você e Sua Família</h3>
+                <div class="beneficios-grid">
+                    <div class="beneficio-item">
+                        <span class="beneficio-icon familia-icon"></span>
+                        <span>Envolvimento da família no plano de cuidados</span>
+                    </div>
+                    <div class="beneficio-item">
+                        <span class="beneficio-icon personalizacao-icon"></span>
+                        <span>Personalização completa do tratamento</span>
+                    </div>
+                    <div class="beneficio-item">
+                        <span class="beneficio-icon dignidade-icon"></span>
+                        <span>Tratamento com dignidade e respeito</span>
+                    </div>
+                    <div class="beneficio-item">
+                        <span class="beneficio-icon comunicacao-icon"></span>
+                        <span>Comunicação transparente e constante</span>
+                    </div>
+                </div>
+                
+                <div class="section-cta">
+                    <a href="#" class="btn btn-primary">Fale com Nossa Equipe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="depoimentos-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Histórias de Esperança e Transformação</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">Cada pessoa que passa pela Yuna tem uma história única. Conheça algumas das jornadas que nos inspiram todos os dias.</p>
+            </div>
+            
+            <div class="depoimentos-grid">
+                <div class="depoimento-card featured">
+                    <div class="depoimento-tipo">Paciente</div>
+                    <div class="depoimento-content">
+                        <p>"Quando cheguei na Yuna, estava com muito medo e incerteza sobre minha recuperação. Mas desde o primeiro dia, me senti acolhida como se fosse da família. A equipe não apenas cuidou da minha reabilitação física, mas também do meu emocional. Eles respeitaram minha história, meus medos e sonhos. Hoje, seis meses depois, não apenas recuperei meus movimentos, mas também minha confiança e alegria de viver."</p>
+                    </div>
+                    <div class="depoimento-autor">
+                        <div class="autor-info">
+                            <strong>Ana Beatriz</strong>
+                            <span>Reabilitação pós-AVC • 67 anos</span>
+                        </div>
+                        <div class="autor-foto">AB</div>
+                    </div>
+                </div>
+                
+                <div class="depoimento-card">
+                    <div class="depoimento-tipo">Familiar</div>
+                    <div class="depoimento-content">
+                        <p>"Ver meu pai internado foi uma das experiências mais difíceis da nossa família. Na Yuna, encontramos não apenas profissionais competentes, mas pessoas que entenderam nossa dor e nos acolheram. Eles nos incluíram em cada decisão, explicaram cada procedimento e nos deram esperança quando mais precisávamos. Meu pai não apenas se recuperou fisicamente, mas voltou a sorrir. A Yuna cuidou de toda nossa família."</p>
+                    </div>
+                    <div class="depoimento-autor">
+                        <div class="autor-info">
+                            <strong>Fernanda Costa</strong>
+                            <span>Filha de paciente • Cuidados Continuados</span>
+                        </div>
+                        <div class="autor-foto">FC</div>
+                    </div>
+                </div>
+                
+                <div class="depoimento-card">
+                    <div class="depoimento-tipo">Paciente</div>
+                    <div class="depoimento-content">
+                        <p>"O que mais me marcou na Yuna foi como eles respeitaram quem eu sou. Mesmo em um momento tão difícil da minha vida, eles lembraram que eu era professor, que gostava de música clássica, que tinha uma família que me amava. O plano de cuidados foi feito pensando em mim, não apenas na minha doença. Isso fez toda a diferença na minha recuperação e na minha dignidade."</p>
+                    </div>
+                    <div class="depoimento-autor">
+                        <div class="autor-info">
+                            <strong>Roberto Mendes</strong>
+                            <span>Cuidados Paliativos • 72 anos</span>
+                        </div>
+                        <div class="autor-foto">RM</div>
+                    </div>
+                </div>
+                
+                <div class="depoimento-card">
+                    <div class="depoimento-tipo">Familiar</div>
+                    <div class="depoimento-content">
+                        <p>"Quando soubemos do diagnóstico da mamãe, nosso mundo desabou. A Yuna nos mostrou que ainda havia muito amor, cuidado e momentos especiais pela frente. A equipe nos ensinou a aproveitar cada dia, a encontrar alegria nos pequenos momentos e a cuidar dela com dignidade. Foram os meses mais difíceis, mas também os mais cheios de amor da nossa família."</p>
+                    </div>
+                    <div class="depoimento-autor">
+                        <div class="autor-info">
+                            <strong>Marcos e Lucia Silva</strong>
+                            <span>Filhos de paciente • Cuidados Paliativos</span>
+                        </div>
+                        <div class="autor-foto">ML</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="depoimentos-stats">
+                <div class="stat-item">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">das famílias recomendam nossos cuidados</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4.9/5</span>
+                    <span class="stat-label">avaliação média de satisfação</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">vidas transformadas em 2023</span>
+                </div>
+                
+                <div class="section-cta">
+                    <a href="#" class="btn btn-primary">Compartilhe Sua História</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informações Práticas -->
+    <section class="informacoes-praticas-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Informações Práticas</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">Tudo o que você precisa saber para dar o primeiro passo em direção ao cuidado que você ou seu familiar merece</p>
+            </div>
+            
+            <div class="informacoes-grid">
+                <div class="info-card convenios-card">
+                    <div class="info-icon convenios-icon"></div>
+                    <h3>Convênios e Pagamento</h3>
+                    <div class="convenios-content">
+                        <div class="convenio-item">
+                            <h4>Convênios Aceitos</h4>
+                            <ul>
+                                <li>Unimed</li>
+                                <li>Bradesco Saúde</li>
+                                <li>SulAmérica</li>
+                                <li>Amil</li>
+                                <li>Golden Cross</li>
+                                <li>E outros convênios médicos</li>
+                            </ul>
+                        </div>
+                        <div class="convenio-item">
+                            <h4>Outras Formas de Pagamento</h4>
+                            <ul>
+                                <li>Particular</li>
+                                <li>Parcelamento facilitado</li>
+                                <li>Planos personalizados</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="info-note">Entre em contato para verificar a cobertura do seu convênio e conhecer nossas condições especiais.</p>
+                </div>
+                
+                <div class="info-card processo-card">
+                    <div class="info-icon processo-icon"></div>
+                    <h3>Como Funciona o Processo</h3>
+                    <div class="processo-steps">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Primeiro Contato</h4>
+                                <p>Entre em contato conosco por telefone, WhatsApp ou e-mail. Nossa equipe estará pronta para esclarecer suas dúvidas e agendar uma conversa.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Avaliação Inicial</h4>
+                                <p>Realizamos uma avaliação completa das necessidades do paciente, incluindo histórico médico e preferências pessoais.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Plano Personalizado</h4>
+                                <p>Desenvolvemos um plano de cuidados específico, considerando a linha de cuidado mais adequada e os objetivos terapêuticos.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Internação e Acolhimento</h4>
+                                <p>Recebemos o paciente e a família com todo carinho, iniciando imediatamente o plano de cuidados estabelecido.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-card documentos-card">
+                    <div class="info-icon documentos-icon"></div>
+                    <h3>Documentos Necessários</h3>
+                    <div class="documentos-content">
+                        <div class="doc-categoria">
+                            <h4>Documentos do Paciente</h4>
+                            <ul>
+                                <li>RG e CPF (originais e cópias)</li>
+                                <li>Cartão do convênio médico</li>
+                                <li>Comprovante de residência</li>
+                                <li>Cartão Nacional de Saúde (SUS)</li>
+                            </ul>
+                        </div>
+                        <div class="doc-categoria">
+                            <h4>Documentos Médicos</h4>
+                            <ul>
+                                <li>Relatórios médicos recentes</li>
+                                <li>Exames complementares</li>
+                                <li>Prescrições médicas atuais</li>
+                                <li>Histórico de medicamentos</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="info-note">Nossa equipe auxiliará você na organização de toda documentação necessária.</p>
+                </div>
+                
+                <div class="info-card contato-card">
+                    <div class="info-icon contato-icon"></div>
+                    <h3>Canais de Atendimento</h3>
+                    <div class="contato-content">
+                        <div class="contato-item">
+                            <strong>Telefone Principal</strong>
+                            <span>(11) 3456-7890</span>
+                        </div>
+                        <div class="contato-item">
+                            <strong>WhatsApp</strong>
+                            <span>(11) 99999-9999</span>
+                        </div>
+                        <div class="contato-item">
+                            <strong>E-mail</strong>
+                            <span>contato@yuna.com.br</span>
+                        </div>
+                        <div class="contato-item">
+                            <strong>Horário de Atendimento</strong>
+                            <span>Segunda a sexta: 8h às 18h<br>Sábados: 8h às 12h</span>
+                        </div>
+                    </div>
+                    <div class="urgencia-info">
+                        <h4>Situações de Urgência</h4>
+                        <p>Para situações de urgência, nossa equipe está disponível 24h por dia através do telefone de plantão.</p>
+                        <strong>Plantão 24h: (11) 99999-0000</strong>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-cta">
+                <a href="#" class="btn btn-primary">Entre em Contato Agora</a>
+            </div>
+            
+            <div class="garantias-box">
+                <h3>Nossas Garantias para Você</h3>
+                <div class="garantias-grid">
+                    <div class="garantia-item">
+                        <span class="garantia-icon transparencia-icon"></span>
+                        <span>Transparência total em todos os processos</span>
+                    </div>
+                    <div class="garantia-item">
+                        <span class="garantia-icon rapidez-icon"></span>
+                        <span>Resposta rápida às suas solicitações</span>
+                    </div>
+                    <div class="garantia-item">
+                        <span class="garantia-icon equipe-icon"></span>
+                        <span>Equipe especializada e qualificada</span>
+                    </div>
+                    <div class="garantia-item">
+                        <span class="garantia-icon ambiente-seguro-icon"></span>
+                        <span>Ambiente acolhedor e seguro</span>
+                    </div>
+                </div>
+                
+                <div class="section-cta">
+                    <a href="#" class="btn btn-primary">Conheça Nossos Compromissos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Final -->
+    <section id="contato" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Estamos aqui para acolher você e sua família</h2>
+                <p>Sabemos que este momento pode ser desafiador, mas você não está sozinho. Nossa equipe está pronta para oferecer todo o cuidado, carinho e esperança que vocês merecem. Vamos juntos construir um caminho de recuperação e bem-estar.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large">Conversar com Nossa Equipe</a>
+                    <a href="#" class="btn btn-secondary btn-large">Conhecer Nossa Casa</a>
+                </div>
+                <p class="cta-subtitle">Cada história importa. Cada pessoa é única. Cada cuidado é especial.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossa Estrutura -->
+    <section class="estrutura-section">
+        <div class="container-fluid">
+            <div class="estrutura-grid-modern">
+                <!-- Foto Principal Grande - ESQUERDA -->
+                <div class="estrutura-main-image">
+                    <img src="public/foto01.png" alt="Estrutura Yuna">
+                </div>
+                
+                <!-- Conteúdo de Texto - DIREITA -->
+                <div class="estrutura-content-modern">
+                    <h2>Nossa estrutura</h2>
+                    <div class="estrutura-info">
+                        <div class="info-item">
+                            <span class="info-text">100 suítes 22 m²</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-text">Centro de reabilitação</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-text">Laboratório de atividades básicas da vida diária</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-text">Solarium com horta e jardim sensorial</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-text">Espaço ecumênico e de meditação</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-text">Sala de estar e de atividades com a família</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-text">Estacionamento</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carrossel de Fotos Embaixo -->
+            <div class="carousel-container-modern">
+                <button class="carousel-btn carousel-prev" aria-label="Anterior">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                
+                <div class="carousel-track-wrapper">
+                    <div class="carousel-track">
+                        <img src="public/foto02.png" alt="Foto 2" class="carousel-image">
+                        <img src="public/foto03.png" alt="Foto 3" class="carousel-image">
+                        <img src="public/foto04.png" alt="Foto 4" class="carousel-image">
+                        <img src="public/foto05.png" alt="Foto 5" class="carousel-image">
+                        <img src="public/foto06.png" alt="Foto 6" class="carousel-image">
+                        <img src="public/foto07.png" alt="Foto 7" class="carousel-image">
+                        <img src="public/foto08.png" alt="Foto 8" class="carousel-image">
+                        <img src="public/foto09.png" alt="Foto 9" class="carousel-image">
+                        <img src="public/foto10.png" alt="Foto 10" class="carousel-image">
+                        <img src="public/foto11.png" alt="Foto 11" class="carousel-image">
+                        <img src="public/foto12.png" alt="Foto 12" class="carousel-image">
+                        <img src="public/foto13.png" alt="Foto 13" class="carousel-image">
+                    </div>
+                </div>
+                
+                <button class="carousel-btn carousel-next" aria-label="Próximo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Histórias que nos orgulham -->
+    <section class="historias-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Histórias que nos orgulham</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">Cases e Depoimentos (estamos pensando ainda nesta estrutura)</p>
+            </div>
+            
+            <div class="historias-grid">
+                <div class="historia-card">
+                    <div class="historia-icon caso-clinico-icon"></div>
+                    <h3>Caso Clínico 1</h3>
+                    <p>Espaço reservado para cases de sucesso e histórias de recuperação que demonstram a excelência do cuidado prestado pela Yuna.</p>
+                </div>
+                
+                <div class="historia-card">
+                    <div class="historia-icon depoimento-icon"></div>
+                    <h3>Depoimento 1</h3>
+                    <p>Área dedicada para depoimentos de pacientes, familiares e médicos parceiros sobre a experiência com a Yuna.</p>
+                </div>
+                
+                <div class="historia-card">
+                    <div class="historia-icon sucesso-icon"></div>
+                    <h3>Case de Sucesso</h3>
+                    <p>Histórias inspiradoras de recuperação e transformação que evidenciam o impacto positivo da reabilitação especializada.</p>
+                </div>
+                
+                <div class="section-cta">
+                    <a href="#" class="btn btn-primary">Veja Mais Histórias</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action 2 -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <p>Pronto para dar o próximo passo? Converse conosco e saiba como a Yuna pode ajudar na sua recuperação.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large">Conversar com a IA da YUNA</a>
+                    <a href="#" class="btn btn-secondary btn-large">Agendar um call rápido</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="public/logo-yuna.svg" alt="Yuna" style="height: 50px; margin-bottom: 1rem;" />
+                    <p>Unidade de Transição de Cuidados especializada em Reabilitação Neurológica.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Telefone: (11) 3087-3800</p>
+                    <p>Rua Alves Guimarães, 429 – Jardins</p>
+                    <p>05410-000 São Paulo, SP</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="medicos.html">Para Médicos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Yuna. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="pacientes.js"></script>
+</body>
+</html>
+
