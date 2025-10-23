@@ -7,7 +7,9 @@
     "dev": "npx live-server --port=3000 --open=medicos.html",
     "dev:pacientes": "npx live-server --port=3000 --open=pacientes.html",
     "build": "echo 'Build concluído - arquivos prontos para produção'",
-    "deploy": "echo 'Configure seu serviço de deploy preferido (Netlify, Vercel, etc.)'"
+    "deploy": "vercel --prod",
+    "deploy:preview": "vercel",
+    "vercel-build": "echo 'Vercel build completed'"
   },
   "keywords": [
     "landing-page",
