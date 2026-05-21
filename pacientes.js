@@ -381,6 +381,79 @@ ctaButtons.forEach(btn => {
     });
 });
 
+// ===== FORMULÁRIO DE CONTATO =====
+const openCallFormBtn = document.getElementById('open-call-form');
+if (openCallFormBtn) {
+    openCallFormBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        const section = document.getElementById('call-form');
+        if (section) {
+            section.style.display = 'block';
+            const headerOffset = 80;
+            const elementPosition = section.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+        }
+    });
+}
+
+function formatWhatsAppNumber(value) {
+    const digits = String(value || '').replace(/\D/g, '').slice(0, 11);
+    if (digits.length === 0) return '';
+    if (digits.length <= 2) return `(${digits}`;
+    if (digits.length <= 7) return `(${digits.slice(0, 2)}) ${digits.slice(2)}`;
+    return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7)}`;
+}
+
+const telefoneInput = document.getElementById('telefone');
+if (telefoneInput) {
+    telefoneInput.setAttribute('inputmode', 'numeric');
+    telefoneInput.setAttribute('maxlength', '15');
+    telefoneInput.setAttribute('placeholder', '(11) 99999-9999');
+    telefoneInput.addEventListener('input', () => {
+        telefoneInput.value = formatWhatsAppNumber(telefoneInput.value);
+    });
+}
+
+const callForm = document.getElementById('callRequestForm');
+if (callForm) {
+    callForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const nome = document.getElementById('nome')?.value?.trim() || '';
+        const email = document.getElementById('email')?.value?.trim() || '';
+        const telefone = document.getElementById('telefone')?.value?.trim() || '';
+        const mensagem = document.getElementById('mensagem')?.value?.trim() || '';
+        const statusEl = document.getElementById('callFormMessage');
+        const submitBtn = callForm.querySelector('button[type="submit"]');
+        if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Enviando...'; }
+        try {
+            const source = callForm.dataset.landing || 'pacientes';
+            const result = await submitLeadForm({ nome, email, telefone, mensagem, source });
+            if (result.ok) {
+                if (statusEl) {
+                    statusEl.style.display = 'block';
+                    statusEl.classList.remove('error');
+                    statusEl.classList.add('success');
+                    statusEl.textContent = result.message;
+                }
+                callForm.reset();
+            } else {
+                throw new Error(result.message);
+            }
+        } catch (err) {
+            if (statusEl) {
+                statusEl.style.display = 'block';
+                statusEl.classList.remove('success');
+                statusEl.classList.add('error');
+                statusEl.textContent = err?.message || 'Erro ao enviar. Tente novamente.';
+            }
+        } finally {
+            if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Enviar'; }
+        }
+    });
+}
+
 // ===== CONSOLE MESSAGE =====
 console.log('%c❤️ Yuna - Landing Page para Pacientes', 'color: #ec4899; font-size: 20px; font-weight: bold;');
 console.log('%cDesenvolvido com ❤️', 'color: #8b5cf6; font-size: 14px;');

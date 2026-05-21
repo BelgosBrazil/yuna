@@ -4,8 +4,9 @@
   "description": "Landing Pages da Yuna - Unidade de Transição de Cuidados especializada em Reabilitação Neurológica",
   "main": "index.html",
   "scripts": {
-    "dev": "npx live-server --port=3000 --open=medicos.html",
-    "dev:pacientes": "npx live-server --port=3000 --open=pacientes.html",
+    "dev": "node scripts/dev-server.js 3000 medicos.html",
+    "dev:pacientes": "node scripts/dev-server.js 3000 pacientes.html",
+    "dev:static": "npx live-server --port=3000 --open=medicos.html",
     "build": "echo 'Build concluído - arquivos prontos para produção'",
     "deploy": "vercel --prod",
     "deploy:preview": "vercel",

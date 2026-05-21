@@ -2,8 +2,34 @@
   "version": 2,
   "builds": [
     {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    },
+    {
       "src": "**/*",
       "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/leads",
+      "dest": "/api/leads.js"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1.js"
+    },
+    {
+      "src": "/medicos",
+      "dest": "/medicos.html"
+    },
+    {
+      "src": "/pacientes",
+      "dest": "/pacientes.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ],
   "rewrites": [

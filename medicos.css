@@ -2041,6 +2041,36 @@ html {
     }
 }
 
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form .form-row {
+    margin-bottom: 1rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid rgba(26, 55, 106, 0.2);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-message.success { color: #22c55e; }
+.form-message.error { color: #ef4444; }
+
 /* ===== RESPONSIVIDADE ESPECÍFICA PARA SEÇÕES PROBLEMÁTICAS ===== */
 
 /* Tablet - 769px a 1024px */

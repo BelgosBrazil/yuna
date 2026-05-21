@@ -670,14 +670,40 @@
     </section>
 
     <!-- Call to Action 2 -->
-    <section class="cta-section">
+    <section id="contato" class="cta-section">
         <div class="container">
             <div class="cta-content">
                 <p>Pronto para dar o próximo passo? Converse conosco e saiba como a Yuna pode ajudar na sua recuperação.</p>
                 <div class="cta-buttons">
                     <a href="#" class="btn btn-primary btn-large">Conversar com a IA da YUNA</a>
-                    <a href="#" class="btn btn-secondary btn-large">Agendar um call rápido</a>
+                    <a href="#" id="open-call-form" class="btn btn-secondary btn-large">Agendar um call rápido</a>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section id="call-form" class="cta-section" style="display: none;">
+        <div class="container">
+            <div class="cta-content">
+                <form id="callRequestForm" class="contact-form" data-landing="pacientes">
+                    <div class="form-row">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">Enviar</button>
+                    <div id="callFormMessage" class="form-message" style="margin-top: 1rem; display: none;"></div>
+                </form>
             </div>
         </div>
     </section>
@@ -710,6 +736,7 @@
         </div>
     </footer>
 
+    <script src="lead-form.js"></script>
     <script src="pacientes.js"></script>
 </body>
 </html>
