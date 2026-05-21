@@ -60,9 +60,13 @@ faqItems.forEach(item => {
 // ===== SMOOTH SCROLL =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
+        const targetSelector = this.getAttribute('href');
+        if (!targetSelector || targetSelector === '#') {
+            return;
+        }
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        
+        const target = document.querySelector(targetSelector);
+
         if (target) {
             const headerOffset = 80;
             const elementPosition = target.getBoundingClientRect().top;

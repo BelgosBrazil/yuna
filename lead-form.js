@@ -21,8 +21,18 @@ async function submitLeadForm(data) {
         return { ok: true, message: 'Solicitação enviada com sucesso.' };
     }
 
+    if (response.status === 503) {
+        return {
+            ok: false,
+            message: result.error || 'Formulário não configurado no servidor. Contate o suporte.'
+        };
+    }
+
     if (response.status === 502) {
-        return { ok: false, message: 'Erro ao enviar para a planilha. Tente novamente.' };
+        return {
+            ok: false,
+            message: result.error || 'Erro ao enviar para a planilha. Tente novamente.'
+        };
     }
 
     if (response.status === 400) {

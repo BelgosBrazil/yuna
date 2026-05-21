@@ -120,14 +120,24 @@ module.exports = async function handler(req, res) {
 
     const lead = normalizeLead(body);
 
+    if (!process.env.GOOGLE_SHEETS_WEBHOOK_URL) {
+        console.error('GOOGLE_SHEETS_WEBHOOK_URL ausente nas variáveis da Vercel');
+        return res.status(503).json({
+            success: false,
+            error: 'Integração com planilha não configurada no servidor (GOOGLE_SHEETS_WEBHOOK_URL).'
+        });
+    }
+
     try {
         await sendLeadToGoogleSheets(lead);
         return res.status(200).json({ success: true });
     } catch (err) {
         console.error('Google Sheets webhook error:', err);
-        return res.status(502).json({
+        const message = err.message || 'Falha ao registrar na planilha';
+        const status = message.includes('não configurada') ? 503 : 502;
+        return res.status(status).json({
             success: false,
-            error: err.message || 'Falha ao registrar na planilha'
+            error: message
         });
     }
 };
